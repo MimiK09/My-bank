@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Code+Pro:wght@300;400;600&display=swap");
+
+#root {
+	font-family: "Roboto", sans-serif;
+}
+/**************/
+/** GENERAL **/
+/**************/
+h2{
+  font-size: 36px;
+}
+
+/**************/
+/** HEADER **/
+/**************/
+header {
+  background-color: #263338;
+  height: 120px;
+  display:flex;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.element-header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  width : 800px;
+  margin : 0px auto;
+}
+
+.user-part{
+  display:flex;
+  align-items: center;
+  gap:20px;
+}
+
+.user-part>*{
+  font-size: 24px;
+}
+.user-part>i{
+  background-color: white;
+  padding : 10px 12px;
+  border-radius: 50%;
+  color:black;
+}
+
+.user-part p{
+  font-weight: 300;
+}
+
+/**************/
+/** ACCOUNTS **/
+/**************/
+
+main {
+  padding : 30px 0;
+  background-color: #EBEFF1;
+}
+
+.element-main {
+  width : 800px;
+  margin : 0px auto;
+display:flex;
+flex-direction: column;
+}
+
+/**************/
+/** ACCOUNT **/
+/**************/
+.amount{
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 300;
+}
+
+.big-line{
+  display:flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding : 20px;
+  font-weight: 500;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.big-line>*{
+  font-size: 24px;
+  color:white;
+}
+
+.liste-button{
+  display: flex;
+  flex-direction: column;
+  width : 760px;
+  margin : 0px auto;
+}
+
+.line{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding : 10px;
+}
+
+.line>*:nth-child(2){
+  flex-grow: 1;
+  padding : 0 20px;
+  
+}
+
+.line:nth-child(even){
+  background-color: #F7F7F7;}
+
+  .line:nth-child(odd){
+    background-color: #fff;}
+
+/**************/
+/** BUTTON **/
+/**************/
+button {
+background-color: #F6F7F8;
+text-transform: uppercase;
+font-size: 300;
+color: #263338;
+border-radius: 5px;
+border : none;
+padding : 10px;
+margin : 10px 0 50px 0;
+width: 100px;
+align-self: flex-end;
+}
+
+@media (min-width: 801px) and (max-width: 1025px) {
+  .element-header{
+
+    width : 700px;
+
+  }
+
+  .element-main {
+    width : 700px;
+  }
+
+  .liste-button{
+
+    width : 680px;
+
+  }
+}
+
+@media (min-width: 480px) and (max-width: 800px) {
+  .element-header{
+
+    width : 460px;
+
+  }
+
+  .element-main {
+    width : 460px;
+  }
+
+  .liste-button{
+
+    width : 440px;
+
+  }
+}
