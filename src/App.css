@@ -168,17 +168,17 @@ align-self: flex-end;
 @media (min-width: 320px) and (max-width: 479px) {
   .element-header{
 
-    width : 300px;
+    width : 315px;
 
   }
 
   .element-main {
-    width : 300px;
+    width : 315px;
   }
 
   .liste-button{
 
-    width : 280px;
+    width : 300px;
 
   }
 }
